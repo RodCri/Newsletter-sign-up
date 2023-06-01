@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 700px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234deg, 29%, 20%);
+  }
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.content .stay {
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
+}
+@media (min-width: 700px) {
+  .content .stay {
+    flex-direction: row-reverse;
+    padding: 24px;
+    max-height: 640px;
+  }
+}
+.content .stay .stay__figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 700px) {
+  .content .stay .stay__figure {
+    justify-content: flex-end;
+    width: 50%;
+  }
+}
+.content .stay .stay__figure .illustration {
+  min-width: 50%;
+}
+.content .stay .stay__info {
+  width: 100%;
+  padding: 40px 26px;
+}
+@media (min-width: 700px) {
+  .content .stay .stay__info {
+    width: 50%;
+  }
+}
+.content .stay .stay__info .info__title {
+  font-size: 3rem;
+  color: hsl(234deg, 29%, 20%);
+  margin-bottom: 32px;
+}
+@media (min-width: 700px) {
+  .content .stay .stay__info .info__title {
+    font-size: 5rem;
+  }
+}
+.content .stay .stay__info .info__description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: hsl(234deg, 29%, 20%);
+  margin-bottom: 28px;
+}
+.content .stay .stay__info .info__options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 4rem;
+}
+.content .stay .stay__info .info__options .option {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 1.6rem;
+  color: hsl(234deg, 29%, 20%);
+  line-height: 1.5;
+}
+.content .stay .stay__info .register {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.content .stay .stay__info .register .register__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(234deg, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+}
+.content .stay .stay__info .register .register__input {
+  width: 100%;
+  max-width: 370px;
+  height: 56px;
+  border-radius: 8px;
+  padding: 0 2.4rem;
+  border: 1px solid hsl(231deg, 7%, 60%);
+  outline-color: hsl(231deg, 7%, 60%);
+  color: hsl(234deg, 29%, 20%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.content .stay .stay__info .register .register__input::placeholder {
+  color: hsl(231deg, 7%, 60%);
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+}
+.content .stay .stay__info .register .register__input:focus {
+  outline-color: hsl(234deg, 29%, 20%);
+}
+.content .stay .stay__info .register .register__error {
+  display: none;
+  color: hsl(4deg, 100%, 67%);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.content .stay .stay__info .register .register__cta {
+  width: 100%;
+  max-width: 370px;
+  height: 56px;
+  outline: none;
+  font-size: 1.4rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(235deg, 18%, 26%);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.content .stay .stay__info .register .register__cta:hover {
+  background: linear-gradient(45deg, #ff5478, #ff673e);
+  box-shadow: 0 5px 15px 1px hsl(4deg, 100%, 67%);
+  transition: 0.3s ease;
+}
+.content .message {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
+  padding: 50px 64px;
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+}
+.content .message .success {
+  width: 64px;
+  height: 64px;
+}
+.content .message .message__title {
+  font-size: 5rem;
+  color: hsl(234deg, 29%, 20%);
+}
+.content .message .message__info {
+  color: 1.6rem;
+  color: hsl(234deg, 29%, 20%);
+  line-height: 1.5;
+}
+.content .message .message__info .success__correo {
+  font-weight: 700;
+}
+.content .message .message__cta {
+  width: 100%;
+  max-width: 370px;
+  height: 56px;
+  outline: none;
+  font-size: 1.4rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(235deg, 18%, 26%);
+  cursor: pointer;
+}
+.content .message .message__cta:hover {
+  background: linear-gradient(45deg, #ff5478, #ff673e);
+  box-shadow: 0 5px 15px 1px hsl(4deg, 100%, 67%);
+  transition: 0.3s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
